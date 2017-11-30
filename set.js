@@ -43,7 +43,7 @@ class SetClass{
     intersect(intersectingList){
         let intersectingSet = new SetClass(intersectingList);
         let intersection = [];
-        intersectingSet.map(item=>{
+        intersectingSet.value().map(item=>{
             if (this.has(item)){
                 intersection.push(item)
             }
@@ -53,7 +53,7 @@ class SetClass{
     difference(differenceList){
         let differenceSet = new SetClass(differenceList);
         let difference = [];
-        intersectingSet.map(item=>{
+        differenceSet.value().map(item=>{
             if (!this.has(item)){
                 difference.push(item)
             }
@@ -61,7 +61,7 @@ class SetClass{
         return difference;
     }
     union(unionList){
-        return new SetClass(this.collection.concat(unionList));
+        return new SetClass(this.collection.concat(unionList)).value();
     }
 };
 
@@ -85,3 +85,7 @@ console.log(newSet.value());
 const newSet2 = new SetClass([1,2,3,4,5,5,6,6,6,1]);
 console.log(newSet2.value());
 
+// INTERSECTION, DIFF, UNION
+console.log(`intersection: ${newSet.intersect(newSet2.value())}`);
+console.log(`difference: ${newSet.difference(newSet2.value())}`);
+console.log(`union: ${newSet.union(newSet2.value())}`)
