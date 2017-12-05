@@ -7,5 +7,11 @@ This is a pub/sub pattern. Pubs are events that are triggered or `published` and
 ## [CALL APPLY AND BIND](call-apply-bind.js)
 Basical prototypical methods pertaining to Javascript
 
+## [CURRYING AND CHAINING](currying-and-chaining.js)
+Partial Applications and Function chaining methods.
+
 ## [Singletons](singleton.js)
 In software engineering, the singleton pattern is a software design pattern that restricts the instantiation of a class to one object
+
+## [SET](set.js)
+Writing Set Methods in Javascript. Methods include Union, Intersection and Difference.
