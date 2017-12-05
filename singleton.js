@@ -1,6 +1,5 @@
-var Foo = (function () {
-    "use strict";
-    var instance; //prevent modification of "instance" variable
+const Foo = (function () {
+    let instance; //prevent modification of "instance" variable
     function Singleton() {
         if (instance) {
             return instance;
@@ -19,3 +18,4 @@ const Meow = Foo;
 const MeowInstance = Meow.getInstance();
 
 console.log(MeowInstance);
+const MewTwo = Foo;
