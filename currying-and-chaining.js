@@ -1,3 +1,4 @@
+// CURRYING FUNCTIONS
 const dragon = name =>
                 size =>
                     element=>
@@ -8,6 +9,7 @@ console.log(fluffykins);
 
 const ziggy = dragon('ziggy');
 console.log(ziggy('microscopic')('underwater'));
+
 
 // CHAINING FUNCTIONS
 chainable = function(value){
@@ -34,7 +36,7 @@ chainable = function(value){
             return this;
         }
         if(typeof value === "string"){
-            this.value-='!!';
+            this.value = this.value.slice(0,-1);
             return this;
         }
         if(typeof value === "number"){
@@ -48,10 +50,15 @@ chainable = function(value){
     return this;
 }
 
+// with arrays
 const listOfNumbers = chainable;
-
 const newSetList = listOfNumbers([1,2,3]);
 console.log(newSetList.add().add().add().add().subtract().getValue());
 
+// with numbers
 const numberOne = chainable(1);
 console.log(newSetList.add().add().add().add().subtract().getValue());
+
+// with strings
+const z00gie = chainable('z00gie');
+console.log(z00gie.add().add().subtract().getValue());
