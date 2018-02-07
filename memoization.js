@@ -1,5 +1,5 @@
 /*
-*   µgrabbed from http://www.penta-code.com/introduction-to-memoization-in-javascript/
+*  grabbed from http://www.penta-code.com/introduction-to-memoization-in-javascript/
 */
 
 //Javascript Memoization
@@ -11,8 +11,15 @@ var raiseTo100Power = function(base) {
     result = Math.pow(base, 100);
     raiseTo100Power._cache[base] = result;
   }
-  return raiseTo100Power._cache[base];
+  if (base){
+    return raiseTo100Power._cache[base];
+  }
+  else return raiseTo100Power._cache;
 }
 
-console.log(raiseTo100Power(100))
-console.log(raiseTo100Power())
+console.log('raiseTo100Power(100): ',raiseTo100Power(100), '\n')
+console.log('raiseTo100Power(101): ',raiseTo100Power(101), '\n')
+
+console.log('raiseTo100Power(100) : ',raiseTo100Power(100),'\n')
+console.log('raiseTo100Power(101) : ',raiseTo100Power(101),'\n')
+console.log('raiseTo100Power({}) : ' ,raiseTo100Power(), '\n')
