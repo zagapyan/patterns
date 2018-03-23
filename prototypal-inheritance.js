@@ -1,18 +1,21 @@
+// THIS IS A SUBCLASS, If a subclass,
+// if a subclass has a method of the same name, it uses that instead.
+// If not, then it'll keep moving up the prototype tree till it finds one.
 function Cat(cat){
   this.name = cat || 'cat'
 }
-
 Cat.prototype.sayName = function(){
   return this.name
 }
-
 const pickles = new Cat('Pickles')
 const pepper = new Cat('Pepper')
 console.log(pickles.sayName());
 console.log(pepper.sayName());
 
 
-
+// THIS IS A SUBCLASS, If a subclass,
+// if a subclass has a method of the same name, it uses that instead.
+// If not, then it'll keep moving up the prototype tree till it finds one.
 const SuperCat = function(name){
   Cat.call(this);
   this.name  = name || this.name;
