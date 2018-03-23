@@ -19,10 +19,10 @@ const felix = {
   sound: 'meow'
 }
 const garfield = {
-  type: 'cat'
+  type: 'cat named garfield'
 }
 const silvester = {
-  type: 'cat'
+  type: 'cat named silvester'
 }
 
 
@@ -45,7 +45,20 @@ const makeSound = function(sound){
   return `The ${this.type} says ${ifSound}`;
 }
 
+const es6MakeSound = function(sound='meow'){
+  return `The ${this.type} says ${sound}`;
+}
+
+
 // here are some examples of call functions
 console.log(makeSound.call(felix, 'purr'));
 console.log(makeSound.call(garfield, 'purr'));
 console.log(makeSound.call(silvester))
+
+console.log(es6MakeSound.call(garfield))
+console.log(es6MakeSound.call(garfield, 'MAOWRS'))
+
+const garfieldSound = es6MakeSound.bind(garfield, 'mew')
+
+console.log(garfieldSound) //for deferred function
+console.log(garfieldSound()) // invoked function

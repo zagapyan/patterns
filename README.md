@@ -18,3 +18,6 @@ Writing Set Methods in Javascript. Methods include Union, Intersection and Diffe
 
 ## [COMPOSE](compose.js)
 Basic Higher Order function example of combinding functions to create other more robust function
+
+## [PROTOTYPAL INHERITANCE IN JAVASCRIPT](prototypal-inheritance.js)
+Basic pattern of depicting prototypal inheritance in Javascript
