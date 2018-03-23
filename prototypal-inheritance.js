@@ -1,6 +1,3 @@
-// THIS IS A SUBCLASS, If a subclass,
-// if a subclass has a method of the same name, it uses that instead.
-// If not, then it'll keep moving up the prototype tree till it finds one.
 function Cat(cat){
   this.name = cat || 'cat'
 }
