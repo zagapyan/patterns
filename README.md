@@ -21,3 +21,6 @@ Basic Higher Order function example of combinding functions to create other more
 
 ## [PROTOTYPAL INHERITANCE IN JAVASCRIPT](prototypal-inheritance.js)
 Basic pattern of depicting prototypal inheritance in Javascript
+
+## [CLASSES IN JAVASCRIPT](class.js)
+Basic example of class and class inheritance (with static/class methods included)
