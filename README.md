@@ -16,7 +16,7 @@ In software engineering, the singleton pattern is a software design pattern that
 ## [SET](set.js)
 Writing Set Methods in Javascript. Methods include Union, Intersection and Difference.
 
-## [COMPOSE](compose.js)
+## [COMPOSE AND PIPE](compose-pipe.js)
 Basic Higher Order function example of combinding functions to create other more robust function
 
 ## [PROTOTYPAL INHERITANCE IN JAVASCRIPT](prototypal-inheritance.js)
