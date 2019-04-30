@@ -24,3 +24,6 @@ Basic pattern of depicting prototypal inheritance in Javascript
 
 ## [CLASSES IN JAVASCRIPT](class.js)
 Basic example of class and class inheritance (with static/class methods included)
+
+## [COMBINING ARRAY BY RELATED KEY](combining-array-by-related-key.js)
+Basic pattern that combines array one array with a foreign key to another and then sorting said items.
